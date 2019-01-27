@@ -9,6 +9,13 @@ return [
 	 */
 	'application-credentials' => env('GOOGLE_APPLICATION_CREDENTIALS'),
 
+
+	/**
+	 * This will used to porovide access to only gsuite User with a specific domain.
+	 */
+
+	'hd' => env('GOOGLE_CLIENT_HD', ''),
+
 	/**
 	 * This must be the super-admin account of your GSuite organization.
 	 * Laravel-GSuite will act on behalf of this user to perform all the API actions.
